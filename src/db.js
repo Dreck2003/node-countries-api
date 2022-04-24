@@ -24,7 +24,7 @@ let sequelize = new Sequelize(
 if (modo !== "dev") {
   sequelize = new Sequelize({
     database: DB_NAME,
-    username: "root",
+    username: DB_USER,
     password: DB_PASSWORD,
     host: DB_HOST,
     port: DB_PORT,
