@@ -3,11 +3,13 @@ const { Sequelize } = require("sequelize");
 const fs = require("fs");
 const path = require("path");
 
-let DB_USER = process.env.DB_USER || "postgres";
-let DB_PASSWORD = process.env.DB_PASSWORD || "dikson";
-let DB_HOST = process.env.DB_HOST || "localhost";
-let DB_NAME = process.env.DB_NAME || "countries";
-let DB_PORT = process.env.DB_PORT || "3002";
+let DB_USER = process.env.DB_USER || "fcjhatonhnnwht";
+let DB_PASSWORD =
+  process.env.DB_PASSWORD ||
+  "e6822b4e3fa41026039f9a477a9d80a0f672041a048ba2186ea4e0883eb76e27";
+let DB_HOST = process.env.DB_HOST || "ec2-3-229-252-6.compute-1.amazonaws.com";
+let DB_NAME = process.env.DB_NAME || "d64od0qenb51qv";
+let DB_PORT = process.env.DB_PORT || "5432";
 
 const sequelize = new Sequelize(
   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
