@@ -11,7 +11,8 @@ const server = express();
 
 // server.name = "API";
 // const allowedOrigin = process.env.ORIGIN;
-const allowedOrigin = "http://localhost:3000";
+const allowedOrigin =
+  process.env.ORIGIN || "https://client-countries.vercel.app/";
 
 const options = {
   origin: allowedOrigin,
